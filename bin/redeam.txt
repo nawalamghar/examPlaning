@@ -1,0 +1,62 @@
+
+INSERT INTO `role` (`idRole`, `nomRole`) VALUES
+(1, 'ROLE_ADMIN');
+
+INSERT INTO `personne` (`idPersonne`, `cin`, `email`, `nom`, `nomArabe`, `photo`, `prenom`, `prenomArabe`, `telephone`) VALUES
+(1, 'R1111', 'boudaa@aaa.fr', 'boudaa', 'aaaAr', '', 'aaa', 'tarikAr', '0600000');
+
+INSERT INTO `compte` (`idCompte`, `accountNonExpired`, `accountNonLocked`, `credentialsNonExpired`, `enabled`, `login`, `password`, `idUtilisateur`, `idRole`) VALUES
+(1, b'1', b'1', b'1', b'1', 'admin', '{bcrypt}$2a$10$vsjRwUSUi2B/jlw4ATXEN.B2IIcVY8ourImFZnWcW1tLz3G6mLfpe', 1, 1);
+
+
+
+
+INSERT INTO `dept` (`idDept`,`titreD`) VALUES
+(1,'Département Mathématiques et Informatique'),
+(2,'Département Génie Civil Energétique et Environnement');
+
+
+INSERT INTO `filiere` (`idFiliere`,`titreF`) VALUES
+(1,'GI'),
+(2,'ID'),
+(3,'GC'),
+(4,'GEER'),
+(5,'GEE'),
+(6,'GM'),
+(7,'TDIA');
+
+
+
+
+INSERT INTO `niveau` (`IdNiveau`, `titreN`) VALUES 
+(1, 'GI1'), (2, 'GI2'), (3, 'GI3'), (4, 'ID1'), (5, 'ID2'), (6, 'ID3'), 
+(7, 'GC1'), (8, 'GC2'), (9, 'GC3'), (10, 'GEER1'), (11, 'GEER2'), 
+(12, 'GEER3'), (13, 'GEE1'), (14, 'GEE2'), (15, 'GEE3'), (16, 'GM1'), 
+(17, 'GM2'), (18, 'GM3'), (19, 'TDIA1'), (20, 'TDIA2'), (21, 'TDIAR3');
+
+INSERT INTO `type` (`idType`, `titreT`) VALUES
+(1, 'Module'), (2, 'Element');
+
+
+
+
+INSERT INTO `salle` (`id_salle`,`capacity`,`nom`) Values
+(1,50,'1NB'),(2,50,'2NB'),(3,50,'3NB'),(4,50,'4NB'),(5,50,'5NB'),(6,55,'6NB'),(7,50,'1AB'),
+(8,55,'2AB'),(10,60,'3AB'),(11,60,'4AB'),(12,60,'5AB'),(13,60,'6AB'),
+(14,100,'Amphi A'),(15,200,'Amphi B');
+
+
+INSERT INTO `semestre` (`idSemestre`,`intitule`) VALUES 
+(1,'printemps'),(2,'automne');
+
+INSERT INTO `session` (`idSession`,`intitule`) values
+(1,'normal'),(2,'rattrapage');
+
+
+INSERT INTO `typeexam` (`idTypeExam`,`intitule`) values
+(1,'Devoir surveillé 1') ,(2,'Devoir surveillé 2');
+
+
+
+
+

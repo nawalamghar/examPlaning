@@ -1,0 +1,32 @@
+
+.error {
+    border: 3px solid red;
+}
+
+.success {
+    border: 3px solid green;
+}
+
+#success {
+    background-color: #a3ebac;
+    color: darkgreen;
+    font-size: medium;
+    padding: 10px;
+    display: none;
+}
+
+#failed {
+    background-color: #fac8c8;
+    color: darkred;
+    font-size: medium;
+    padding: 10px;
+    display: none;
+}
+
+#loading {
+    background-color: rgb(255, 224, 167);
+    color: rgb(211, 117, 2);
+    font-size: medium;
+    padding: 10px;
+    display: none;
+}
