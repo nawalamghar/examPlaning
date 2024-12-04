@@ -43,11 +43,9 @@ jobs:
         with:
           name: java-app
 
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
+           - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v3
         with:
-          app-name: 'EnsahExamsPlaning'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_063E46FD63BB400595D547092798C1FF }}
-          package: '*.jar'
+          name: java-app
+          path: '${{ github.workspace }}/target/*.war'
+
