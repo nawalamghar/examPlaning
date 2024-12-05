@@ -11,9 +11,10 @@
 	<groupId>com.ensah</groupId>
 	<artifactId>ProjectPlanExamen</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<name>ProjectPlanExamen</name>
 	<description>Demo project for Spring Boot</description>
+	<packaging>war</packaging>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -110,10 +111,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-			    <groupId>com.microsoft.azure</groupId>
-			    <artifactId>azure-webapp-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
